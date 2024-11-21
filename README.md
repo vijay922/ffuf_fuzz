@@ -7,7 +7,9 @@ Overview ffuf_scan.py is a Python script that automates the process of running t
 2. Batch URL Scanning: Processes multiple URLs from a file, scanning each one sequentially.
 3. Dynamic Filtering (-fl):
 3.1 Monitors ffuf output for repeated Lines: values.
+   
 3.2 If a Lines: value appears more than 5 times, the script:
+
 * Stops the current scan.
 * Adds the repeated Lines: value to the -fl filter.
 * Restarts the scan with the updated filter.
