@@ -6,6 +6,7 @@ Overview ffuf_scan.py is a Python script that automates the process of running t
 1. Single URL Scanning: Scans a single URL with /FUZZ appended to it.
 2. Batch URL Scanning: Processes multiple URLs from a file, scanning each one sequentially.
 3. Dynamic Filtering (-fl):
+
 3.1 Monitors ffuf output for repeated Lines: values.
    
 3.2 If a Lines: value appears more than 5 times, the script:
