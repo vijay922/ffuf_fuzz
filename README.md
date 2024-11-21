@@ -28,7 +28,8 @@
 ### Prerequisites
 
 - **Python 3.7+**
-- `ffuf` installed and available in your system's PATH go install github.com/ffuf/ffuf/v2@latest.
+- `ffuf` installed and available in your system's PATH
+ `go install github.com/ffuf/ffuf/v2@latest`
 - A wordlist file to use with `ffuf`.
 
 ---
