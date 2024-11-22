@@ -92,7 +92,7 @@ A guide and script to configure Tor for changing your IP address every 5 seconds
 Edit the Tor configuration file:
 ```bash
 sudo nano /etc/tor/torrc
-
+```
 # Tor Configuration and Usage
 
 ## Add or Modify the Following Lines
