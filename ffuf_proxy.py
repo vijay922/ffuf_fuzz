@@ -94,7 +94,7 @@ for url in urls:
     base_command = [
         "ffuf",
         "-u", url_with_fuzz,
-        "-w", "/usr/share/tools/wordlist.txt",
+        "-w", "wordlist.txt",
         "-mc", "200,204,301,307,302,401,403,405",
         "-t", "400",
         "-ac",
