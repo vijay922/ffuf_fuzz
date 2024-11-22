@@ -96,9 +96,10 @@ sudo nano /etc/tor/torrc
 # Tor Configuration and Usage
 
 ## Add or Modify the Following Lines
+```
 SocksPort 9050
 SocksPolicy accept *
-
+```
 ## Start Tor
 
 To start the Tor service, run:
