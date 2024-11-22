@@ -64,6 +64,8 @@ python3 ffuf_scan.py -l urls.txt
   1. The current scan is **stopped**.
   2. The repeated `Lines:` value is **added to the `-fl` filter**.
   3. The scan is **restarted** with the updated `-fl` filter.
+ 
+# If you want to run ffuf_proxy.py, First execute Below Tor commands
 
 # Tor IP Changer Every 5 Seconds
 
