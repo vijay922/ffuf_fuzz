@@ -65,3 +65,61 @@ python3 ffuf_scan.py -l urls.txt
   2. The repeated `Lines:` value is **added to the `-fl` filter**.
   3. The scan is **restarted** with the updated `-fl` filter.
 
+# Tor IP Changer Every 5 Seconds
+
+This script allows you to change your Tor IP address every 5 seconds by restarting the Tor service using a simple bash loop.
+
+## Prerequisites
+
+- A Linux-based system
+- `tor` installed on your machine
+- Basic knowledge of terminal commands
+
+## Installation
+
+1. **Install Tor**:
+   ```bash
+   sudo apt install tor
+   ```
+
+   # Tor IP Rotator
+
+A guide and script to configure Tor for changing your IP address every 5 seconds.
+
+## Configuration
+
+### 1. Add or Modify Tor Configuration
+Edit the Tor configuration file:
+```bash
+sudo nano /etc/tor/torrc
+
+# Tor Configuration and Usage
+
+## Add or Modify the Following Lines
+SocksPort 9050
+SocksPolicy accept *
+
+## Start Tor
+
+To start the Tor service, run:
+
+```bash
+sudo service tor start
+```
+
+# Usage
+
+## Test Tor IP Address
+Use `curl` with the Tor proxy to confirm your public IP address:
+
+```bash
+curl --socks5-hostname localhost:9050 https://api.ipify.org
+```
+
+## Run IP Rotation Script
+
+To rotate your IP address every 5 seconds, execute the following command:
+
+```bash
+while true; do pkill -HUP tor; sleep 5; done
+```
